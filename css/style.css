@@ -1,0 +1,25 @@
+@import url("./reset.css");
+
+body {
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
