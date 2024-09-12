@@ -6,6 +6,7 @@ body {
 
 header {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   padding: 1rem 0;
   width: 100%;
@@ -13,10 +14,41 @@ header {
   margin: 0 auto;
 }
 
-.header-left {
+header > div {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+header .right {
+  width: 100%;
+}
+
+header .menu-content {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .menu-icon {
+  display: none;
+}
+
+/* For Mobile */
+@media screen and (max-width: 450px) {
+  header .right {
+    width: max-content;
+  }
+
+  header .menu-content {
+    display: none;
+  }
+
+  header .menu-icon {
+    display: block;
+  }
 }
 
 nav {
